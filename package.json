@@ -1,0 +1,27 @@
+{
+  "name": "fitcbot",
+  "version": "1.0.0",
+  "description": "FITC Bot",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayar/fitcbot.git"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/nodemon app.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sayar/fitcbot/issues"
+  },
+  "homepage": "https://github.com/sayar/fitcbot#readme",
+  "dependencies": {
+    "botbuilder": "^3.7.0",
+    "requests": "^0.1.7",
+    "restify": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
