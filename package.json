@@ -1,27 +1,43 @@
 {
-  "name": "fitcbot",
-  "version": "1.0.0",
-  "description": "FITC Bot",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sayar/fitcbot.git"
-  },
-  "scripts": {
-    "start": "node_modules/.bin/nodemon app.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sayar/fitcbot/issues"
-  },
-  "homepage": "https://github.com/sayar/fitcbot#readme",
-  "dependencies": {
-    "botbuilder": "^3.7.0",
-    "requests": "^0.1.7",
-    "restify": "^4.3.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
-  }
+    "name": "fitcbot",
+    "version": "1.0.0",
+    "description": "FITC Bot",
+    "main": "app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sayar/fitcbot.git"
+    },
+    "scripts": {
+        "start": "node app.js",
+        "devstart": "node_modules/.bin/nodemon app.js",
+        "setup": "node setup.js",
+        "lint": "node_modules/.bin/eslint *.js dialogs/*.js"
+    },
+    "engines": {
+        "node": "6.10.0",
+        "npm": "4.4.1"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sayar/fitcbot/issues"
+    },
+    "homepage": "https://github.com/sayar/fitcbot#readme",
+    "dependencies": {
+        "botbuilder": "^3.7.0",
+        "botbuilder-cognitiveservices": "^1.0.1",
+        "dotenv": "^4.0.0",
+        "request-promise": "^4.2.0",
+        "requests": "^0.1.7",
+        "restify": "^4.3.0"
+    },
+    "devDependencies": {
+        "eslint": "^3.19.0",
+        "eslint-config-standard": "^10.2.1",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint-plugin-node": "^4.2.2",
+        "eslint-plugin-promise": "^3.5.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "nodemon": "^1.11.0"
+    }
 }
